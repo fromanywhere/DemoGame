@@ -1,0 +1,13 @@
+CACHE MANIFEST
+
+# This is a comment
+
+CACHE:
+index.html
+css/style.css
+js/index.js
+
+FALLBACK:
+
+NETWORK:
+*

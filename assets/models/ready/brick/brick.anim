@@ -1,0 +1,1 @@
+{"bones":[{"name":"root"}],"slots":[{"name":"model","bone":"root","attachment":"model"}],"skins":{"default":{"model":{"model":{"x":0.5,"y":72.99,"width":157,"height":148}}}},"animations":{"move":{"bones":{"root":{"translate":[{"time":0,"x":0,"y":0},{"time":0.6666,"x":0,"y":900}]}}}}}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html manifest="game.appcache">
+  <head>
+    <title>Демо</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">globals.paths ={"startPath":{"name":"startPath","dots":[{"mainHandle":{"x":135.625,"y":523.5416666666666},"nextHandle":{"x":313.87931326116376,"y":522.6414073071719},"prevHandle":null},{"mainHandle":{"x":537.3958333333333,"y":522.0833333333333},"nextHandle":null,"prevHandle":{"x":346.3776499774466,"y":515.046628326567}}],"breakpath":false,"objects":{"hero":{"animation":"_walk","speed":4}}},"jump1":{"name":"jump1","dots":[{"mainHandle":{"x":537.3958333333333,"y":522.0833333333333},"nextHandle":{"x":568.0208333333333,"y":441.1458333333333},"prevHandle":null},{"mainHandle":{"x":694.8958333333333,"y":520.625},"nextHandle":null,"prevHandle":{"x":668.6458333333333,"y":438.9583333333333}}],"breakpath":false,"objects":{"hero":{"animation":"jump","speed":4}}},"bonusPath":{"name":"bonusPath","dots":[{"mainHandle":{"x":1252.7083333333333,"y":517.7083333333333},"nextHandle":{"x":1518.0520833333333,"y":515.7395833333333},"prevHandle":null},{"mainHandle":{"x":1858.6458333333333,"y":512.6041666666666},"nextHandle":null,"prevHandle":{"x":1717.9166666666665,"y":509.6875}}],"breakpath":false,"objects":{"hero":{"animation":"_walk","speed":4}}},"endPath":{"name":"endPath","dots":[{"mainHandle":{"x":2006.6666666666665,"y":509.6875},"nextHandle":{"x":2063.541666666666,"y":514.7916666666666},"prevHandle":null},{"mainHandle":{"x":2418.645833333333,"y":510.41666666666663},"nextHandle":null,"prevHandle":{"x":2355.499999999999,"y":507.35416666666663}}],"breakpath":false,"objects":{"hero":{"animation":"_walk","speed":4}}},"jump3":{"name":"jump3","dots":[{"mainHandle":{"x":1858.6458333333333,"y":512.6041666666666},"nextHandle":{"x":1871.7708333333328,"y":431.66666666666663},"prevHandle":null},{"mainHandle":{"x":2006.6666666666665,"y":509.6875},"nextHandle":null,"prevHandle":{"x":1980.4166666666656,"y":418.54166666666663}}],"breakpath":true,"objects":{"hero":{"animation":"jump","speed":4}}},"jump2":{"name":"jump2","dots":[{"mainHandle":{"x":1098.8541666666665,"y":515.5208333333333},"nextHandle":{"x":1149.1666666666665,"y":433.125},"prevHandle":null},{"mainHandle":{"x":1252.7083333333333,"y":517.7083333333333},"nextHandle":null,"prevHandle":{"x":1221.3541666666665,"y":430.9375}}],"breakpath":true,"objects":{"hero":{"animation":"jump","speed":4}}},"handlePath":{"name":"handlePath","dots":[{"mainHandle":{"x":694.8958333333333,"y":520.625},"nextHandle":{"x":809.0833333333333,"y":516.5416666666666},"prevHandle":null},{"mainHandle":{"x":1098.8541666666665,"y":515.5208333333333},"nextHandle":null,"prevHandle":{"x":978.1041666666665,"y":517.4166666666666}}],"breakpath":false,"objects":{"hero":{"animation":"_walk","speed":4}}},"dragonPath":{"name":"dragonPath","dots":[{"mainHandle":{"x":2344.270833333333,"y":376.25},"nextHandle":{"x":2194.0625,"y":307.7083333333333},"prevHandle":null},{"mainHandle":{"x":2056.9791666666665,"y":382.8125},"nextHandle":null,"prevHandle":{"x":2216.6666666666665,"y":484.8958333333333}}],"breakpath":false,"objects":{"dragon":{"animation":"flying","speed":4}}},"dragonOut":{"name":"dragonOut","dots":[{"mainHandle":{"x":2344.270833333333,"y":376.25},"nextHandle":{"x":2410.6249999999995,"y":435.3125},"prevHandle":null},{"mainHandle":{"x":2521.458333333333,"y":9.479166666666666},"nextHandle":null,"prevHandle":{"x":2531.6666666666665,"y":96.25}}],"breakpath":false,"objects":{"dragon":{"animation":"flying","speed":4}}}}
+    </script>
+    <script type="text/javascript" src="js/debug.js"></script>
+    <script type="text/javascript">var debug = true;</script>
+  </head>
+  <body>
+    <canvas id="view"></canvas>
+    <div class="hint"></div>
+    <div class="black-fade"></div>
+    <div class="debug__wrap">
+      <div class="debug">
+        <div class="debug__control">
+          <div class="debug__control-data">
+            <div class="debug__control-traects">
+              <select size="10" class="debug__control-traects-list"></select>
+              <label class="debug__control-traects-label">
+                <input type="checkbox" disabled="disabled" class="debug__control-traects-break">breakpath
+              </label>
+              <div>
+                <button class="debug__button debug__button_add">Добавить траекторию</button>
+                <button class="debug__button_remove">Удалить траекторию</button>
+              </div>
+            </div>
+            <div class="debug__control-objects">
+              <select size="4" class="debug__control-objects-list"></select>
+              <button disabled="disabled" class="debug__button debug__button_remove-object">Отвязать объект</button>
+              <hr>
+              <select size="3" class="debug__control-objects-anim"></select>
+              <label class="debug__control-traects-label">
+                <input type="number" value="0" min="0" class="debug__control-traects-speed">Скорость
+              </label>
+              <button class="debug__button debug__button_remember-animation">Задать анимацию</button>
+            </div>
+          </div>
+          <div class="debug__control-buttons">
+            <hr>
+            <button class="debug__button debug__button_toggle-overlay">Переключить оверлей</button>
+            <hr>
+            <button class="debug__button debug__button_save">Записать в файл</button>
+          </div>
+        </div>
+        <canvas class="debug__view debug__view_hidden"></canvas>
+      </div>
+    </div>
+  </body>
+</html>
