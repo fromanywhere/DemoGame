@@ -8,7 +8,7 @@ document.addEventListener('hero.start', function (e) {
 
 		dragonToLeft();
 	}
-})
+});
 
 document.addEventListener('hero.stop.inGraphId.7', function () {
 	if (!globals.triggers.brickOut) {
@@ -44,7 +44,7 @@ document.addEventListener('dragon.objectClick', function () {
 	globals.objects.dragon.moveTo({
 		path: 'dragonOut',
 		chain: 4
-	})
+	});
 
 	globals.triggers.dragonOut = true;
 
@@ -130,7 +130,7 @@ document.addEventListener('handle.objectClick', function () {
 					}
 				});
 			}
-		})
+		});
 
 		setTimeout(function () {
 			globals.objects.handle.animate({
@@ -157,9 +157,10 @@ document.addEventListener('bonus1.objectClick', function () {
 			callback: function () {
 				hint.message('Бонус №1!<br />Всего ' + globals.triggers.points + ' очков');
 			}
-		})
+		});
 
 		setTimeout(function () {
+			globals.objects.bonus1.ai.stop();
 			globals.objects.bonus1.animate({
 				animation: 'get'
 			})
@@ -180,9 +181,10 @@ document.addEventListener('bonus2.objectClick', function () {
 			callback: function () {
 				hint.message('Бонус №2!<br />Всего ' + globals.triggers.points + ' очков');
 			}
-		})
+		});
 
 		setTimeout(function () {
+			globals.objects.bonus2.ai.stop();
 			globals.objects.bonus2.animate({
 				animation: 'get'
 			})
@@ -203,9 +205,10 @@ document.addEventListener('bonus3.objectClick', function () {
 			callback: function () {
 				hint.message('Бонус №3!<br />Всего ' + globals.triggers.points + ' очков');
 			}
-		})
+		});
 
 		setTimeout(function () {
+			globals.objects.bonus3.ai.stop();
 			globals.objects.bonus3.animate({
 				animation: 'get'
 			})

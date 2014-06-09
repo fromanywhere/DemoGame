@@ -176,6 +176,46 @@ function init() {
 						'get': {
 							soundSrc: 'assets/models/ready/bonus/bonus.wav'
 						}
+					},
+					ai: {
+						stayAnimation: 'move',
+						probMatrix: [
+							[
+								{yes: 0, no: 0},
+								{yes: 0, no: 0},
+								{yes: 0, no: 0},
+								{yes: 10, no: 10},
+								{yes: 0, no: 0}
+							],
+							[
+								{yes: 0, no: 0},
+								{yes: 0, no: 0},
+								{yes: 0, no: 0},
+								{yes: 10, no: 10},
+								{yes: 0, no: 0}
+							],
+							[
+								{yes: 0, no: 0},
+								{yes: 0, no: 0},
+								{yes: 0, no: 0},
+								{yes: 10, no: 10},
+								{yes: 0, no: 0}
+							],
+							[
+								{yes: 0, no: 0},
+								{yes: 0, no: 0},
+								{yes: 0, no: 0},
+								{yes: 10, no: 10},
+								{yes: 0, no: 0}
+							],
+							[
+								{yes: 0, no: 2},
+								{yes: 0, no: 0},
+								{yes: 0, no: 0},
+								{yes: 10, no: 10},
+								{yes: 0, no: 0}
+							]
+						]
 					}
 				}),
 
@@ -192,6 +232,46 @@ function init() {
 						'get': {
 							soundSrc: 'assets/models/ready/bonus/bonus.wav'
 						}
+					},
+					ai: {
+						stayAnimation: 'move',
+						probMatrix: [
+							[
+								{yes: 0, no: 0},
+								{yes: 0, no: 0},
+								{yes: 0, no: 0},
+								{yes: 10, no: 10},
+								{yes: 0, no: 0}
+							],
+							[
+								{yes: 0, no: 0},
+								{yes: 0, no: 0},
+								{yes: 0, no: 0},
+								{yes: 10, no: 10},
+								{yes: 0, no: 0}
+							],
+							[
+								{yes: 0, no: 0},
+								{yes: 0, no: 0},
+								{yes: 0, no: 0},
+								{yes: 10, no: 10},
+								{yes: 0, no: 0}
+							],
+							[
+								{yes: 0, no: 0},
+								{yes: 0, no: 0},
+								{yes: 0, no: 0},
+								{yes: 10, no: 10},
+								{yes: 0, no: 0}
+							],
+							[
+								{yes: 0, no: 2},
+								{yes: 0, no: 0},
+								{yes: 0, no: 0},
+								{yes: 10, no: 10},
+								{yes: 0, no: 0}
+							]
+						]
 					}
 				}),
 
@@ -208,6 +288,46 @@ function init() {
 						'get': {
 							soundSrc: 'assets/models/ready/bonus/bonus.wav'
 						}
+					},
+					ai: {
+						stayAnimation: 'move',
+						probMatrix: [
+							[
+								{yes: 0, no: 0},
+								{yes: 0, no: 0},
+								{yes: 0, no: 0},
+								{yes: 10, no: 10},
+								{yes: 0, no: 0}
+							],
+							[
+								{yes: 0, no: 0},
+								{yes: 0, no: 0},
+								{yes: 0, no: 0},
+								{yes: 10, no: 10},
+								{yes: 0, no: 0}
+							],
+							[
+								{yes: 0, no: 0},
+								{yes: 0, no: 0},
+								{yes: 0, no: 0},
+								{yes: 10, no: 10},
+								{yes: 0, no: 0}
+							],
+							[
+								{yes: 0, no: 0},
+								{yes: 0, no: 0},
+								{yes: 0, no: 0},
+								{yes: 10, no: 10},
+								{yes: 0, no: 0}
+							],
+							[
+								{yes: 0, no: 2},
+								{yes: 0, no: 0},
+								{yes: 0, no: 0},
+								{yes: 10, no: 10},
+								{yes: 0, no: 0}
+							]
+						]
 					}
 				}),
 
@@ -233,7 +353,7 @@ function init() {
 					x: 0,
 					y: 0,
 					z: 5
-				})
+				});
 
 			globals.objects.hero.image.stateData.setMixByName("_walk", "stop", 0.3);
 			globals.objects.hero.image.stateData.setMixByName("_walk", "jump", 0.3);
