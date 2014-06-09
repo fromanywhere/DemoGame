@@ -15451,7 +15451,9 @@ document.addEventListener('hero.stop.inGraphId.5', function () {
 document.addEventListener('handle.objectClick', function () {
 	var heroPosition = globals.objects.hero.getPosition();
 
-	if (heroPosition.path === 'handlePath' && heroPosition.chain === 2) {
+	if (heroPosition.path === 'handlePath' && heroPosition.chain === 2 && !globals.triggers.brickOut) {
+		globals.triggers.brickOut = true;
+
 		globals.objects.hero.animate({
 			animation: 'jump',
 			callback: function () {
@@ -15463,8 +15465,6 @@ document.addEventListener('handle.objectClick', function () {
 						globals.objects.brick3.animate({
 							animation: 'move'
 						})
-
-						globals.triggers.brickOut = true;
 					}
 				});
 			}
@@ -15485,8 +15485,9 @@ globals.triggers.points = 0;
 document.addEventListener('bonus1.objectClick', function () {
 	var heroPosition = globals.objects.hero.getPosition();
 
-	if (heroPosition.path === 'bonusPath' && heroPosition.chain === 1) {
+	if (heroPosition.path === 'bonusPath' && heroPosition.chain === 1 && !globals.triggers.bonus1) {
 
+		globals.triggers.bonus1 = true;
 		globals.triggers.points += 100;
 
 		globals.objects.hero.animate({
@@ -15507,7 +15508,9 @@ document.addEventListener('bonus1.objectClick', function () {
 document.addEventListener('bonus2.objectClick', function () {
 	var heroPosition = globals.objects.hero.getPosition();
 
-	if (heroPosition.path === 'bonusPath' && heroPosition.chain === 3) {
+	if (heroPosition.path === 'bonusPath' && heroPosition.chain === 3 && !globals.triggers.bonus2) {
+
+		globals.triggers.bonus2 = true;
 		globals.triggers.points += 100;
 
 		globals.objects.hero.animate({
@@ -15528,7 +15531,9 @@ document.addEventListener('bonus2.objectClick', function () {
 document.addEventListener('bonus3.objectClick', function () {
 	var heroPosition = globals.objects.hero.getPosition();
 
-	if (heroPosition.path === 'bonusPath' && heroPosition.chain === 5) {
+	if (heroPosition.path === 'bonusPath' && heroPosition.chain === 5 && !globals.triggers.bonus3) {
+
+		globals.triggers.bonus3 = true;
 		globals.triggers.points += 100;
 
 		globals.objects.hero.animate({
