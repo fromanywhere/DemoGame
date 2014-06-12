@@ -16248,43 +16248,7 @@ function init() {
 					},
 					ai: {
 						stayAnimation: 'move',
-						probMatrix: [
-							[
-								{yes: 0, no: 0},
-								{yes: 0, no: 0},
-								{yes: 0, no: 0},
-								{yes: 10, no: 10},
-								{yes: 0, no: 0}
-							],
-							[
-								{yes: 0, no: 0},
-								{yes: 0, no: 0},
-								{yes: 0, no: 0},
-								{yes: 10, no: 10},
-								{yes: 0, no: 0}
-							],
-							[
-								{yes: 0, no: 0},
-								{yes: 0, no: 0},
-								{yes: 0, no: 0},
-								{yes: 10, no: 10},
-								{yes: 0, no: 0}
-							],
-							[
-								{yes: 0, no: 0},
-								{yes: 0, no: 0},
-								{yes: 0, no: 0},
-								{yes: 10, no: 10},
-								{yes: 0, no: 0}
-							],
-							[
-								{yes: 0, no: 2},
-								{yes: 0, no: 0},
-								{yes: 0, no: 0},
-								{yes: 10, no: 10},
-								{yes: 0, no: 0}
-							]
-						]
+						stayTime: 1
 					}
 				}),
 
@@ -16304,43 +16268,7 @@ function init() {
 					},
 					ai: {
 						stayAnimation: 'move',
-						probMatrix: [
-							[
-								{yes: 0, no: 0},
-								{yes: 0, no: 0},
-								{yes: 0, no: 0},
-								{yes: 10, no: 10},
-								{yes: 0, no: 0}
-							],
-							[
-								{yes: 0, no: 0},
-								{yes: 0, no: 0},
-								{yes: 0, no: 0},
-								{yes: 10, no: 10},
-								{yes: 0, no: 0}
-							],
-							[
-								{yes: 0, no: 0},
-								{yes: 0, no: 0},
-								{yes: 0, no: 0},
-								{yes: 10, no: 10},
-								{yes: 0, no: 0}
-							],
-							[
-								{yes: 0, no: 0},
-								{yes: 0, no: 0},
-								{yes: 0, no: 0},
-								{yes: 10, no: 10},
-								{yes: 0, no: 0}
-							],
-							[
-								{yes: 0, no: 2},
-								{yes: 0, no: 0},
-								{yes: 0, no: 0},
-								{yes: 10, no: 10},
-								{yes: 0, no: 0}
-							]
-						]
+						stayTime: 1
 					}
 				}),
 
@@ -16360,43 +16288,7 @@ function init() {
 					},
 					ai: {
 						stayAnimation: 'move',
-						probMatrix: [
-							[
-								{yes: 0, no: 0},
-								{yes: 0, no: 0},
-								{yes: 0, no: 0},
-								{yes: 10, no: 10},
-								{yes: 0, no: 0}
-							],
-							[
-								{yes: 0, no: 0},
-								{yes: 0, no: 0},
-								{yes: 0, no: 0},
-								{yes: 10, no: 10},
-								{yes: 0, no: 0}
-							],
-							[
-								{yes: 0, no: 0},
-								{yes: 0, no: 0},
-								{yes: 0, no: 0},
-								{yes: 10, no: 10},
-								{yes: 0, no: 0}
-							],
-							[
-								{yes: 0, no: 0},
-								{yes: 0, no: 0},
-								{yes: 0, no: 0},
-								{yes: 10, no: 10},
-								{yes: 0, no: 0}
-							],
-							[
-								{yes: 0, no: 2},
-								{yes: 0, no: 0},
-								{yes: 0, no: 0},
-								{yes: 10, no: 10},
-								{yes: 0, no: 0}
-							]
-						]
+						stayTime: 1
 					}
 				}),
 
